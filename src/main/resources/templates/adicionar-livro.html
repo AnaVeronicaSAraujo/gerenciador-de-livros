@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Livro</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    
+</head>
+<body>
+
+<main id="container">
+
+    <section id="img">
+        <img th:src="@{/images/biblioteca.svg}">
+    </section>
+    
+     <section id="adicionar-livro">
+        <h1 id="title-adicionar-livro" alt="" class="adicionar-livro">
+            Adicionar Livro
+        </h1>
+        <form id="form" th:action="@{/adicionar-livro}" method="post">
+                 <nav>
+                    <ul>
+                        <li><a href="bookfy">Home</a></li>
+                        <li><a href="listar-livros">Listar Livros</a></li>
+                    </ul>
+                </nav>
+
+            <div class="input-box">
+                <label for="título">
+                    Título
+                </label>
+                <div class="input-field">
+                    <i class="fa-solid fa-font"></i>
+                    <input type="text" id="titulo" name="titulo" placeholder="Digite o título do livro">
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="autor">
+                    Autor
+                </label>
+                <div class="input-field">
+                    <i class="fa-solid fa-pencil"></i>
+                    <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor do livro">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="capa">
+                    Capa
+                </label>
+                <div class="input-field">
+                    <i class="fa-solid fa-book"></i>
+                    <input type="text" id="capa" name="capa" placeholder="Adicine o link da capa do livro">
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="playlist">
+                    Playlist
+                </label>
+                <div class="input-field">
+                    <i class="fa-solid fa-music"></i>
+                    <input type="text" id="playlist" name="playlist" placeholder="Adicine o link da sua Playlist">
+                </div>
+            </div>
+            <button type="submit" id="botao-adicionar-livro">Adicionar Livro</button>
+        </form>   
+         
+    </section>
+</main>
+
+</body>
+</html>

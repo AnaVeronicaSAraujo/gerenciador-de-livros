@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Livros</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <title>BOOKFY</title>
+</head>
+<body>
+
+<main id="container-biblioteca">
+
+    <section id="img">
+        <img th:src="@{/images/biblioteca.svg}">
+    </section>
+    
+    <section id="biblioteca">
+        <h1 id="title">BOOKFY</h1>
+        <button id="cadastrar-livros" onclick="location.href='adicionar-livro'">Adicionar Livros</button>
+        <button id="listar-livros" onclick="location.href='listar-livros'">Listar Livros</button>        
+    </section>
+</main>
+</body>
+</html>
